@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,3 +35,6 @@
     </table>
 </body>
 </html>
+=======
+hola mundo
+>>>>>>> 70637280125e4696ab93b48b98b0a5144e8f5ae1

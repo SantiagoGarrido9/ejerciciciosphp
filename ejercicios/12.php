@@ -3,9 +3,20 @@
         <meta charset="UTF-8">
         <title>Ejercicio 12</title>
 </head><body>
-    <h2>Enviar Campo Nombre</h2>
-    <form method="get" action="12action.php">
-        <label>Nombre</label><input type="text" name="nombre" required><br>
-        <input type="submit" value="enviar">
-    </form>
+    <h2>Formulario con Retroceso</h2>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  Name: <input type="text" name="nombre">
+  <input type="submit">
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = $_REQUEST['nombre'];
+  if (empty($name)) {
+    echo "El nombre no se ha enviado";
+  } else {
+    echo $name;
+  }
+}
+?>
 </body></html>
